@@ -1,0 +1,30 @@
+body {
+    background: lightsteelblue;
+}
+
+#root {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.increment-btn,
+.decrement-btn,
+.counter-val {
+    flex-basis: calc(100% / 3);
+}
+
+.counter-val {
+    text-align: center;
+}
+
+.reset-btn {
+    flex-basis: 100%;
+    margin-top: 20px;
+}
