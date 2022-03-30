@@ -2,29 +2,33 @@ body {
     background: lightsteelblue;
 }
 
-#root {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.counter {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.increment-btn,
-.decrement-btn,
 .counter-val {
-    flex-basis: calc(100% / 3);
-}
-
-.counter-val {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 60px;
+    margin: 0;
     text-align: center;
+    width: 60px;
+}
+
+.decrement-btn,
+.increment-btn {
+    display: inline-block;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
 }
 
 .reset-btn {
-    flex-basis: 100%;
+    display: block;
+    height: 30px;
     margin-top: 20px;
+    width: 180px;
+}
+
+#root {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
 }
